@@ -1,0 +1,81 @@
+.anime-item-carousel {
+    padding: 20px 15px 20px 15px;
+    background-color: white;
+}
+
+.img-item-carousel {
+    max-width: 100%;
+    max-height: 100%;
+    height: 200px;
+    width: 300px; 
+}
+
+.time-item {
+    position: absolute;
+    top: 170px;
+    background-color: rgba(0, 117, 195, .9);
+    color: white;
+    border-radius: 5px;
+    margin: 0 0 2px 5px;
+}
+
+.name-anime-item {
+    margin-top: 5px;
+    border-top: 1px solid black;
+}
+
+.item-anime{
+    padding-top: 20px;
+    box-shadow:0 0 4px #999;
+    background-color: #fff;
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .time-item  {
+        top: 170px;
+        font-size: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 770px) {
+    .time-item { 
+        top: 170px;
+        font-size: 10px;
+        left: 10px;
+    }
+    .name-anime-item {
+        font-size: 10px;
+    }
+  }
+
+.all-anime {
+    background-color: black;
+    overflow: hidden;
+    padding-left: 15px;
+}
+
+.anime-list-item{
+    box-shadow:0 0 4px #999;
+    background-color: #fff;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+
+.amount-view {
+    position: absolute;
+    top: 0px;
+    background-color: green;
+    color: white;
+    font-size: 12px;
+   
+}
+
+.time-run {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 0px;
+    right:15px;
+    background-color: red;
+}
