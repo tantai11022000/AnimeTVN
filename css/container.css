@@ -42,23 +42,6 @@
     margin-left: 30px;
 }
 
-@media only screen and (max-width: 1200px) {
-    .time-item  {
-        top: 170px;
-        font-size: 10px;
-    }
-  }
-
-  @media only screen and (max-width: 770px) {
-    .time-item { 
-        top: 170px;
-        font-size: 10px;
-        left: 10px;
-    }
-    .name-anime-item {
-        font-size: 10px;
-    }
-  }
 
 .all-anime {
     background-color: white;
@@ -150,4 +133,25 @@
         float: none !important;
         width: 100% !important;
     }
-  }
+}
+
+  @media only screen and (max-width: 1200px) {
+    .time-item  {
+        top: 170px;
+        font-size: 10px;
+    }
+}
+
+  @media only screen and (max-width: 770px) {
+    .time-item { 
+        top: 170px;
+        font-size: 10px;
+        left: 10px;
+    }
+    .name-anime-item {
+        font-size: 10px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+}
