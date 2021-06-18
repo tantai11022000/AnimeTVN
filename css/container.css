@@ -94,3 +94,56 @@
 .anime-list-item {
     padding-top: 20px
 }
+
+.myTabItem {
+    font-size: 13px;
+    background-color: gray;
+    color: white;
+    border: 1px solid white;
+}
+
+.rank-anime-item {
+    border-bottom: 2px solid white;
+    list-style-type: none;
+    padding-top: 20px;
+    margin-left: -35px;
+    height: 200px;
+}
+
+.rank--anime-img {
+    width: 90px;
+    height: 150px;
+
+}
+
+.rank-anime {
+    background-color: red;
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    height: 32px;
+    line-height: 32px;
+    margin: 28px 0 0;
+    text-align: center;
+    width: 32px;
+    color: #fff;
+    
+    border-radius: 16px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+}
+
+.rank-name-anime {
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .left-main-container {
+        float: none !important;
+        width: 100% !important;
+    }
+    .right-main-container {
+        float: none !important;
+        width: 100% !important;
+    }
+  }
