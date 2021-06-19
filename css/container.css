@@ -101,7 +101,7 @@
 .rank--anime-img {
     width: 90px;
     height: 150px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .rank-anime {
@@ -125,6 +125,12 @@
     color: white;
 }
 
+@media only screen and (max-width: 1200px) {
+  .time-item  {
+      top: 170px;
+      font-size: 10px;
+  }
+}
 @media only screen and (max-width: 1000px) {
     .left-main-container {
         float: none !important;
@@ -139,12 +145,6 @@
     }
 }
 
-  @media only screen and (max-width: 1200px) {
-    .time-item  {
-        top: 170px;
-        font-size: 10px;
-    }
-}
 
   @media only screen and (max-width: 770px) {
     .time-item { 
@@ -160,5 +160,8 @@
     }
     .item-anime {
         margin-left: 0px;
+    }
+    .anime-list-item {
+        margin-left: 25px;
     }
 }

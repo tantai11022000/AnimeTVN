@@ -1,0 +1,34 @@
+.wrap-thumbnail {
+    position:absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.left-main-container {
+    background-color: #fff;
+    width:70%;
+    float:left;
+}
+
+
+.wrap-detail-anime {
+    padding-left: 20px;
+    box-shadow:0 0 4px #999;
+    margin:4px;
+}
+
+.main-anime-name {
+    background-color: #339966;
+    display: inline-block;
+    margin-top: 10px;
+    
+}
+
+.right-main-container {
+    width:30%;
+    float:right;
+}
+
+.mybutton {
+    margin: 0px 10px 0 10px;
+}
