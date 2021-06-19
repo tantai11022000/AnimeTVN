@@ -10,11 +10,16 @@
     float:left;
 }
 
+.right-row {
+    border-left: 2px solid black;
+}
+
 
 .wrap-detail-anime {
     padding-left: 20px;
+    padding-right: 20px;
     box-shadow:0 0 4px #999;
-    margin:4px;
+    margin:10px;
 }
 
 .main-anime-name {
@@ -24,6 +29,19 @@
     
 }
 
+.info-detail-label {
+    color:blue;
+}
+
+.info-detail-data {
+    color: brown;
+    font-weight: 500;
+}
+
+.info-detail-item {
+    font-weight: 500;
+}
+
 .right-main-container {
     width:30%;
     float:right;
@@ -31,4 +49,37 @@
 
 .mybutton {
     margin: 0px 10px 0 10px;
+}
+
+.nav-link.active {
+    opacity: 1 !important;
+    background-color: red !important;
+    color: white !important;
+}
+
+@media only screen and (max-width: 770px) {
+    .myanime-pic-thumbnail {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .myanime-pic-thumbnail {
+        max-width: 70%;
+    }
+    .right-row {
+        border: none;
+    }
+    .wrap-btn {
+        margin-left: 150px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .wrap-btn {
+        margin-left: 60px;
+        margin-bottom: 20px;
+    }
 }
