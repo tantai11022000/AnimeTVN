@@ -130,6 +130,9 @@
       top: 170px;
       font-size: 10px;
   }
+  .wrap-item-dropdown {
+      width: 500px !important;
+  }
 }
 @media only screen and (max-width: 1000px) {
     .left-main-container {

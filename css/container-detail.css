@@ -57,11 +57,6 @@
     color: white !important;
 }
 
-@media only screen and (max-width: 770px) {
-    .myanime-pic-thumbnail {
-        max-width: 50%;
-    }
-}
 
 @media only screen and (max-width: 1000px) {
     .myanime-pic-thumbnail {
@@ -76,10 +71,32 @@
     }
 }
 
-@media only screen and (max-width: 1000px) {
 
+@media only screen and (max-width: 770px) {
+    .myanime-pic-thumbnail {
+        max-width: 50%;
+    }
     .wrap-btn {
         margin-left: 60px;
         margin-bottom: 20px;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .myanime-pic-thumbnail {
+        max-width: 30%;
+    }
+    .wrap-btn {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .mybutton {
+        margin-top: 20px;
+        
+    }
+}
+
+

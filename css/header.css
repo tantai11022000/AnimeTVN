@@ -27,7 +27,6 @@
 .navobj {
     color: white;
     padding: 0 10px;
-    z-index: 1;
 }
 
 .navobj:hover {
@@ -48,7 +47,7 @@
 .menu-anime-season {
     background-color:#20313e;
     color: white;
-    align-items: center;
+    /* align-items: center; */
 }
 .anime-season-item:hover {
     background-color: orange;
