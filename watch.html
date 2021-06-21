@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
     <link rel="stylesheet" href="css/allweb.css">
     <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/container-detail.css">
     <link rel="stylesheet" href="css/footer.css">
 
 
@@ -327,22 +328,1133 @@
                         <h3 class="myanime-name">1234567890</span>
                     </div>
                     <div class="wrap-my-tv">
-                        <button onclick="playVideo()" type="button">Play</button>
-                        <button onclick="pauseVideo()" type="button">Pause</button><br>
-                        <video id="myTV" class="my-tv" style="width: 100%; " onclick="playVideo()">
-                            <source src="myvideo/Date A Live ova vietsub 2.mp4">
+                        <video tabindex="-1" src="myvideo/Date A Live ova vietsub 2.mp4" id="myTV" class="my-tv"
+                            style="width: 100%; " onclick="checkVideo()" controls>
                         </video>
                     </div>
                     <script>
                         var myVideo = document.getElementById("myTV");
-                        function playVideo() {
-                            myVideo.play();
+                        function checkVideo() {
+
+                            if (myVideo.paused) {
+                                myVideo.pause()
+
+                            }
+                            else {
+                                myVideo.play()
+                            }
                         }
-                        function pauseVideo() {
-                            myVideo.pause();
-                        }
+                       
                     </script>
                 </div>
+            </div>
+            <div class="container">
+                <div class="left-main-container">
+                    <div class="wrap-comment-anime">
+                        <h3 class="text-center">BÌNH LUẬN PHIM</h3>
+                        <div class="comment-anime" style="padding-left: 20px; overflow: hidden;">
+                            <form>
+                                <div class="row" style="margin-right:-135px">
+                                    <div class="col-lg-5 col-sm-5">
+                                        <input style="width: 100%;" type="text" class="name"
+                                            placeholder="Nhập tên của bạn (Bắt buộc)">
+                                    </div>
+                                    <div class="col-lg-5 col-sm-5">
+                                        <input style="width: 100%;" type="text" class="email"
+                                            placeholder="Nhập email của bạn (Không bắt buộc)">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-lg-11">
+                                        <textarea class="viewer-comment" cols="30" rows="5" style="width: 105%;"
+                                            placeholder="Nhập bình luận của bạn"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-primary">Gửi bình luận</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-main-container">
+                    <!-- Quảng Cáo  -->
+                    <div class="Advisor" style="background-color:#00665d;">
+                        <h3 class="text-center">
+                            Quảng cáo
+                        </h3>
+                        <img class="img-fluid"
+                            src="https://cdn.cet.edu.vn/wp-content/uploads/2019/02/villa-khong-gian-sang-trong.jpg"
+                            alt="">
+                    </div>
+                    <!-- Bảng xếp hạng anime -->
+                    <div class="BXH">
+                        <h3 class="text-center" style="background-color: #00665d;">BẢNG XẾP HẠNG</h3>
+                        <div class="myTab" style="margin-top: -7px">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item  myTabItem">
+                                    <a class="nav-link active" data-toggle="tab" href="#Date">Ngày</a>
+                                </li>
+                                <li class="nav-item  myTabItem">
+                                    <a class="nav-link " data-toggle="tab" href="#Week">Tuần</a>
+                                </li>
+                                <li class="nav-item myTabItem">
+                                    <a class="nav-link " data-toggle="tab" href="#Month">Tháng</a>
+                                </li>
+                                <li class="nav-item myTabItem">
+                                    <a class="nav-link " data-toggle="tab" href="#Season">Mùa</a>
+                                </li>
+                                <li class="nav-item myTabItem">
+                                    <a class="nav-link myTabItem" data-toggle="tab" href="#Year">Năm</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div id="Date" class="container tab-pane active"><br>
+                                    <div class="info-tab-pane">
+                                        <ul class="rank-anime-list"
+                                            style="background-color: #414141; margin: -25px 0 0 -15px; width: 110%;">
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/5rHPGDc-1.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/5rHPGDc-1.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/5rHPGDc-1.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/5rHPGDc-1.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/5rHPGDc-1.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/5rHPGDc-1.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/5rHPGDc-1.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/5rHPGDc-1.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/5rHPGDc-1.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/5rHPGDc-1.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="Week" class="container tab-pane fade"><br>
+                                    <div class="info-tab-pane">
+                                        <ul class="rank-anime-list"
+                                            style="background-color: #414141; margin: -25px 0 0 -15px; width: 110%;">
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/112268.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/112268.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/112268.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/112268.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/112268.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/112268.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/112268.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/112268.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/112268.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/112268.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="Month" class="container tab-pane fade"><br>
+                                    <div class="info-tab-pane">
+                                        <ul class="rank-anime-list"
+                                            style="background-color: #414141; margin: -25px 0 0 -15px; width: 110%;">
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/110185.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/110185.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/110185.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/110185.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/110185.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/110185.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/110185.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/110185.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/110185.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/110185.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="Season" class="container tab-pane fade"><br>
+                                    <div class="info-tab-pane">
+                                        <ul class="rank-anime-list"
+                                            style="background-color: #414141; margin: -25px 0 0 -15px; width: 110%;">
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/e7c936b5eacd4fd0f89bd7b651954e6b1383245216_full.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/e7c936b5eacd4fd0f89bd7b651954e6b1383245216_full.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/e7c936b5eacd4fd0f89bd7b651954e6b1383245216_full.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/e7c936b5eacd4fd0f89bd7b651954e6b1383245216_full.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/e7c936b5eacd4fd0f89bd7b651954e6b1383245216_full.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/e7c936b5eacd4fd0f89bd7b651954e6b1383245216_full.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/e7c936b5eacd4fd0f89bd7b651954e6b1383245216_full.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/e7c936b5eacd4fd0f89bd7b651954e6b1383245216_full.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/e7c936b5eacd4fd0f89bd7b651954e6b1383245216_full.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/e7c936b5eacd4fd0f89bd7b651954e6b1383245216_full.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="Year" class="container tab-pane fade"><br>
+                                    <div class="info-tab-pane">
+                                        <ul class="rank-anime-list"
+                                            style="background-color: #414141; margin: -25px 0 0 -15px; width: 110%;">
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/ac36818309ca8e2c144095f00bd314509d9601f7.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/ac36818309ca8e2c144095f00bd314509d9601f7.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/ac36818309ca8e2c144095f00bd314509d9601f7.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/ac36818309ca8e2c144095f00bd314509d9601f7.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/ac36818309ca8e2c144095f00bd314509d9601f7.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/ac36818309ca8e2c144095f00bd314509d9601f7.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/ac36818309ca8e2c144095f00bd314509d9601f7.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/ac36818309ca8e2c144095f00bd314509d9601f7.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/ac36818309ca8e2c144095f00bd314509d9601f7.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="rank-anime-item">
+                                                <div class="wrap-rank-item" style="position: relative;">
+                                                    <a href="">
+                                                        <div style="float:left; padding-right: 20px;">
+                                                            <span class="rank-anime">1</span>
+                                                        </div>
+                                                        <img src="https://photos.animetvn.tv/upload/film/ac36818309ca8e2c144095f00bd314509d9601f7.jpg"
+                                                            alt="" class="img-thumbnail rank--anime-img">
+                                                    </a>
+                                                    <div style="position: absolute;top: 0;left:150px;">
+                                                        <span class="rank-name-anime">Naruto</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 40px;left:150px;">
+                                                        <span class="rank-name-anime">500/500 Tập</span>
+                                                    </div>
+                                                    <div style="position: absolute;top: 80px;left:150px;">
+                                                        <span class="rank-name-anime">Lượt xem: 6,000</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
             </div>
         </div>
         <!-- footer  -->
